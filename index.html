@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <b>Задача 1</b><br>
+    <script>
+        var width = 55;
+        var height = 5;
+
+        var area = width * height;
+
+        area = area.toFixed(1);
+
+        document.write("Площадь прямоугольника:", area, '<br>', '<br>');
+    </script>
+    <b>Задача 2</b><br>
+    <script>
+        var numbers = [7, -3, 10, 23, -100, 0, 55];
+
+        var maxNumber = Math.max(...numbers);
+        var minNumber = Math.min(...numbers);
+
+        document.write("Максимальное число:", maxNumber, '<br>');
+        document.write("Минимальное число:", minNumber, '<br>', '<br>');
+    </script>
+    <h2>Ипотечный калькулятор</h2>
+    <h3>Расчёт ежемесячного платежа</h3>
+    <form name="forma">
+        Стоимость квартиры<br> <input type="text" size="50" maxlength="50" name="st1"><br><br>
+        Период<br> <input type="text" size="50" maxlength="50" name="st2"><br><br>
+        Ставка<br> <input type="text" size="50" maxlength="50" name="st3"><br><br>
+
+        <input type="button" value="Рассчитать" onclick="zad3(forma);"><br><br>
+
+        Итого: <input type="text" size="8" maxlength="8" name="result1"><br>
+    </form>
+</body>
+</html>
